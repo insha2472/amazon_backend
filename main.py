@@ -17,7 +17,7 @@ app.add_middleware(
 )
 
 engine=create_engine(DATABASE_URL)
-Base.metadata.create_all(engine)
+# Base.metadata.create_all(engine)
 
 @app.get("/")
 def read_root():
